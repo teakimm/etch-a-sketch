@@ -117,7 +117,12 @@ rainbow.addEventListener("click", e => {
   }
 
 });
-
+colorPicker.addEventListener("click", e => {
+  isRainbow = false;
+  document.querySelector(".rainbow").innerHTML = "Rainbow: OFF";
+  isEraser = false;
+  document.querySelector(".eraser").innerHTML = "Eraser: OFF";
+});
 
 
   
