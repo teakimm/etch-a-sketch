@@ -4,22 +4,27 @@
 }
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-.container {
-  display: flex;
-  align-items: center;
+  user-select: none;
+  background-color: #121212;
+  -webkit-user-drag: none;
+  color: white;
 }
 .grid {
   display: grid;
   grid-template-columns: repeat(var(--grid-cols), 1fr);
-  width: 600px;
-  height: 600px;
+  width: 750px;
+  height: 750px;
 }
 .cell {
   background-color: white;
   margin: -1px;
   aspect-ratio: 1;
-  border: 1px solid black;
+}
+.tools {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  flex: 1;
+  max-width: 125px;
 }

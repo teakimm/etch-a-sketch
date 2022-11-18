@@ -9,16 +9,18 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <div class="tools">
-      <label for="colorpicker">Color Picker:</label>
-      <input type="color" id="colorpicker" value="#000000" class="color-picker" oninput="color()">
-    </div>
-    <div class="grid">
-    </div>
+  <div class="tools">
+    <label for="colorpicker">Color Picker:</label>
+    <input type="color" id="colorpicker" value="#000000" class="color-picker">
+    <button class="eraser">Eraser: OFF</button>
+    <button class="rainbow">Rainbow: OFF</button>
+    <button class="toggle">Grid: ON</button>
+    <button class="clear">Clear Canvas</button>
+  </div>
+  <div class="grid">
   </div>
   <div class="slide-ui">
-    <input type="range" min="12" max="24" value="16" class="slider" oninput="setResolution()">
+    <input type="range" min="12" max="64" value="16" class="slider" oninput="setResolution()">
     <p class="resolution">Resolution: 16 x 16</p>
   </div>
 </body>
